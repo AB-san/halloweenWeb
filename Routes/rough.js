@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const roughController = require('../Controllers/rough');
+const roughController = require('../controllers/rough');
 const router = express.Router();
 router.use('movies', roughController.getMovies);
 router.use('/index', roughController.getIndex);

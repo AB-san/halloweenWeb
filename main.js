@@ -15,11 +15,11 @@ const app = express(); // Makes things easy
 //const sequelize = require('./Util/database');
 // TODO: add models
 app.use(cors(corsOptions));
-const Movie = require('./Models/Movie');
+const Movie = require('./models/Movie');
 // Establish Routes
-const adminRoutes = require('./Routes/admin');
-const userRoutes = require('./Routes/user');
-const roughRoute = require('./Routes/rough');
+const adminRoutes = require('./routes/admin');
+const userRoutes = require('./routes/user');
+const roughRoute = require('./routes/rough');
 //const visitorRoutes = require('./Routes/visitor');
 
 app.set('view engine', 'ejs');
