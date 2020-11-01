@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //const { Sequelize } = require("sequelize/types");
 
 // Check Routes
-app.use('/admin', adminRoutes);
+//app.use('/admin', adminRoutes);
 //app.use('/user', userRoutes);
 //app.use('/visitor', visitorRoutes);
 app.use('/', roughRoute);
