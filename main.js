@@ -36,29 +36,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/visitor', visitorRoutes);
 //app.use('/rough', express.static(path.join(__dirname, 'rough')))
 app.use('/index', (req, res, next) => {
-  res.render('/index', {
-      pageTitle: "Movies",
-      path: '/index'
-  });  
+  res.sendFile(path.join__dirname + '/index.html');  
 });
 app.use('/movies', (req, res, next) => {
-  res.render('/movies', {
-      pageTitle: "Movies",
-      path: '/movies'
-  });  
+  res.sendFile(path.join__dirname + '/movies.html');  
 });
 app.use('/page', (req, res, next) => {
-  res.render('/page', {
-      pageTitle: "Movies",
-      path: '/page'
-  });  
+  res.sendFile(path.join__dirname + '/page.html');  
 });
 app.use('/trickortreat', (req, res, next) => {
-  res.render('/trickortreat', {
-      pageTitle: "Movies",
-      path: '/trickortreat'
-  });  
+  res.sendFile(path.join__dirname + '/trickortreat.html');  
 });
+
 //app.use('/', (req, res, next) => {
 //  res.render('index', {
 //      pageTitle: "Movies",
