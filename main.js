@@ -17,8 +17,8 @@ const app = express(); // Makes things easy
 app.use(cors(corsOptions));
 //const Movie = require('./models/Movie');
 // Establish Routes
-const adminRoutes = require('./routes/admin');
-const userRoutes = require('./routes/user');
+//const adminRoutes = require('./routes/admin');
+//const userRoutes = require('./routes/user');
 const roughRoute = require('./routes/rough');
 //const visitorRoutes = require('./Routes/visitor');
 
