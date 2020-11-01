@@ -36,16 +36,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/visitor', visitorRoutes);
 //app.use('/rough', express.static(path.join(__dirname, 'rough')))
 app.use('/index', (req, res, next) => {
-  res.sendFile(path.join__dirname + '/index.html');  
+  res.sendFile(express.static(path.join__dirname + '/index.html'));  
 });
 app.use('/movies', (req, res, next) => {
-  res.sendFile(path.join__dirname + '/movies.html');  
+  res.sendFile(express.static(path.join__dirname + '/movies.html'));  
 });
 app.use('/page', (req, res, next) => {
-  res.sendFile(path.join__dirname + '/page.html');  
+  res.sendFile(express.static(path.join__dirname + '/page.html'));  
 });
 app.use('/trickortreat', (req, res, next) => {
-  res.sendFile(path.join__dirname + '/trickortreat.html');  
+  res.sendFile(express.static(path.join__dirname + '/trickortreat.html'));  
 });
 
 //app.use('/', (req, res, next) => {
