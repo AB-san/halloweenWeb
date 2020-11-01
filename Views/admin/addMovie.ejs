@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') %>
+</head>
+<body>
+    <main>
+        <form class="movie-form" action="/admin/add-movie" method="POST">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required>
+        <label for="director">Director</label>
+        <input type="text" name="director" id="director" required>
+        <label for="runtime">Runtime</label>
+        <input type="number" name="runtime" id="runtime" required step="1">
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" required>
+        <label for="imageUrl">Image URL</label>
+        <input type="text" name="imageUrl" id="imageUrl" required>
+        <button type="submit">Add Movie</button>
+    </form>
+    </main>
+<%- include('../includes/toes.ejs') %>

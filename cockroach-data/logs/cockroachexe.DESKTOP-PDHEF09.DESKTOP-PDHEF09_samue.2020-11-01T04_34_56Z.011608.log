@@ -1,0 +1,144 @@
+I201101 04:34:56.276138 1 util/log/sync_buffer.go:70  [config] file created at: 2020/11/01 04:34:56
+I201101 04:34:56.276138 1 util/log/sync_buffer.go:70  [config] running on machine: DESKTOP-PDHEF09
+I201101 04:34:56.276138 1 util/log/sync_buffer.go:70  [config] binary: CockroachDB CCL v20.1.8 (x86_64-w64-mingw32, built 2020/10/21 15:56:58, go1.13.9)
+I201101 04:34:56.276138 1 util/log/sync_buffer.go:70  [config] arguments: [C:\Program Files\cockroach-v20.1.8.windows-6.2-amd64\cockroach-v20.1.8.windows-6.2-amd64\cockroach.exe start --insecure --listen-addr=localhost]
+I201101 04:34:56.276138 1 util/log/sync_buffer.go:70  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg utf8=✓
+I201101 04:34:56.276136 1 cli/start.go:1223  logging to directory C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data\logs
+W201101 04:34:56.298148 1 cli/start.go:1272  RUNNING IN INSECURE MODE!
+
+- Your cluster is open for any client that can access localhost.
+- Any user, even root, can log in without providing a password.
+- Any user, connecting as root, can read or write any data in your cluster.
+- There is no network encryption nor authentication, and thus no confidentiality.
+
+Check out how to secure your cluster: https://www.cockroachlabs.com/docs/v20.1/secure-a-cluster.html
+W201101 04:34:56.298195 1 cli/start.go:1144  Using the default setting for --cache (128 MiB).
+  A significantly larger value is usually needed for good performance.
+  If you have a dedicated server a reasonable setting is --cache=.25 (16 GiB).
+I201101 04:34:56.298204 1 cli/start.go:1286  CockroachDB CCL v20.1.8 (x86_64-w64-mingw32, built 2020/10/21 15:56:58, go1.13.9)
+W201101 04:34:56.310953 1 cli/start.go:548  running 'cockroach start' without --join is deprecated.
+Consider using 'cockroach start-single-node' or 'cockroach init' instead.
+I201101 04:34:56.319688 1 server/config.go:404  system total memory: 64 GiB
+I201101 04:34:56.319768 1 server/config.go:406  server configuration:
+max offset             500000000
+cache size             128 MiB
+SQL memory pool size   16 GiB
+scan interval          10m0s
+scan min idle time     10ms
+scan max idle time     1s
+event log enabled      true
+I201101 04:34:56.319795 1 cli/start.go:1129  process identity: uid S-1-5-21-2477386673-297547264-542362026-1001, gid S-1-5-21-2477386673-297547264-542362026-1001
+I201101 04:34:56.320033 1 cli/start.go:697  starting cockroach node
+I201101 04:34:56.326738 83 storage/rocksdb.go:606  opening rocksdb instance at "C:\\Users\\samue\\Documents\\GitHub\\halloweenWeb\\cockroach-data\\cockroach-temp893022927"
+I201101 04:34:56.666437 83 server/server.go:1071  [n?] monitoring forward clock jumps based on server.clock.forward_jump_check_enabled
+I201101 04:34:56.667769 83 storage/rocksdb.go:606  opening rocksdb instance at "C:\\Users\\samue\\Documents\\GitHub\\halloweenWeb\\cockroach-data"
+I201101 04:34:56.698648 83 server/config.go:578  [n?] 1 storage engine initialized
+I201101 04:34:56.698657 83 server/config.go:581  [n?] RocksDB cache size: 128 MiB
+I201101 04:34:56.698661 83 server/config.go:581  [n?] store 0: RocksDB, max size 0 B, max open file limit 10000
+I201101 04:34:56.714394 83 server/server.go:1539  [n?] no stores bootstrapped and --join flag specified, awaiting init command or join with an already initialized node.
+I201101 04:34:56.714418 83 server/server.go:1549  [n?] **** add additional nodes by specifying --join=localhost:26257
+I201101 04:34:56.744882 83 server/node.go:324  [n?] **** cluster 846acbbe-3ab2-44bd-a1b7-9aa882763b89 has been created
+I201101 04:34:56.745239 83 gossip/gossip.go:395  [n1] NodeDescriptor set to node_id:1 address:<network_field:"tcp" address_field:"localhost:26257" > attrs:<> locality:<> ServerVersion:<major_val:20 minor_val:1 patch:0 unstable:0 > build_tag:"v20.1.8" started_at:1604205296745004900 cluster_name:"" sql_address:<network_field:"tcp" address_field:"localhost:26257" > 
+W201101 04:34:56.767408 350 kv/kvserver/store.go:1631  [n1,s1,r6/1:/Table/{SystemCon…-11}] could not gossip system config: [NotLeaseHolderError] r6: replica (n1,s1):1 not lease holder; lease holder unknown
+I201101 04:34:56.769187 83 server/node.go:428  [n1] initialized store [n1,s1]: disk (capacity=638 GiB, available=466 GiB, used=80 KiB, logicalBytes=16 KiB), ranges=32, leases=0, queries=0.00, writes=0.00, bytesPerReplica={p10=0.00 p25=0.00 p50=0.00 p75=0.00 p90=166.00 pMax=13304.00}, writesPerReplica={p10=0.00 p25=0.00 p50=0.00 p75=0.00 p90=0.00 pMax=0.00}
+I201101 04:34:56.769275 83 kv/kvserver/stores.go:247  [n1] read 0 node addresses from persistent storage
+I201101 04:34:56.770368 83 server/node.go:649  [n1] connecting to gossip network to verify cluster ID...
+I201101 04:34:56.770384 83 server/node.go:669  [n1] node connected via gossip and verified as part of cluster "846acbbe-3ab2-44bd-a1b7-9aa882763b89"
+I201101 04:34:56.771221 83 server/node.go:512  [n1] node=1: started with [<no-attributes>=C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data] engine(s) and attributes []
+I201101 04:34:56.771481 362 sql/temporary_schema.go:452  [n1] skipping temporary object cleanup run as it is not the leaseholder
+I201101 04:34:56.771506 362 sql/temporary_schema.go:453  [n1] completed temporary object cleanup job
+I201101 04:34:56.771525 362 sql/temporary_schema.go:575  [n1] temporary object cleaner next scheduled to run at 2020-11-01 05:04:56.7712998 +0000 UTC
+I201101 04:34:56.772097 83 server/server.go:1656  [n1] starting http server at 127.0.0.1:8080 (use: localhost:8080)
+I201101 04:34:56.772108 83 server/server.go:1663  [n1] starting grpc/postgres server at 127.0.0.1:26257
+I201101 04:34:56.772117 83 server/server.go:1664  [n1] advertising CockroachDB node at localhost:26257
+I201101 04:34:56.799020 407 sql/event_log.go:132  [n1,intExec=optInToDiagnosticsStatReporting] Event: "set_cluster_setting", target: 0, info: {SettingName:diagnostics.reporting.enabled Value:true User:root}
+I201101 04:34:56.807820 564 sql/event_log.go:132  [n1,intExec=set-setting] Event: "set_cluster_setting", target: 0, info: {SettingName:version Value:20.1 User:root}
+I201101 04:34:56.827125 838 sql/event_log.go:132  [n1,intExec=initializeClusterSecret] Event: "set_cluster_setting", target: 0, info: {SettingName:cluster.secret Value:806a514d-3fe0-470f-bd62-cb41ba5fb6f4 User:root}
+I201101 04:34:56.837293 206 sql/event_log.go:132  [n1,intExec=create-default-db] Event: "create_database", target: 50, info: {DatabaseName:defaultdb Statement:CREATE DATABASE IF NOT EXISTS defaultdb User:root}
+I201101 04:34:56.843903 411 sql/event_log.go:132  [n1,intExec=create-default-db] Event: "create_database", target: 51, info: {DatabaseName:postgres Statement:CREATE DATABASE IF NOT EXISTS postgres User:root}
+I201101 04:34:56.865285 83 server/server.go:1824  [n1] done ensuring all necessary migrations have run
+I201101 04:34:56.865314 83 server/server.go:2066  [n1] serving sql connections
+I201101 04:34:56.865384 833 sqlmigrations/migrations.go:668  [n1] starting wait for upgrade finalization before schema change job migration
+I201101 04:34:56.865432 83 cli/start.go:857  [config] clusterID: 846acbbe-3ab2-44bd-a1b7-9aa882763b89
+I201101 04:34:56.865468 83 cli/start.go:866  node startup completed:
+CockroachDB node starting at 2020-11-01 04:34:56.8653602 +0000 UTC (took 0.6s)
+build:               CCL v20.1.8 @ 2020/10/21 15:56:58 (go1.13.9)
+webui:               http://localhost:8080
+sql:                 postgresql://root@localhost:26257?sslmode=disable
+RPC client flags:    C:\Program Files\cockroach-v20.1.8.windows-6.2-amd64\cockroach-v20.1.8.windows-6.2-amd64\cockroach.exe <client cmd> --host=localhost:26257 --insecure
+logs:                C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data\logs
+temp dir:            C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data\cockroach-temp893022927
+external I/O path:   C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data\extern
+store[0]:            path=C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data
+storage engine:      rocksdb
+status:              initialized new cluster
+clusterID:           846acbbe-3ab2-44bd-a1b7-9aa882763b89
+nodeID:              1
+I201101 04:34:56.865539 833 sqlmigrations/migrations.go:700  [n1] starting schema change job migration
+I201101 04:34:56.866884 831 server/server_update.go:55  [n1] no need to upgrade, cluster already at the newest version
+I201101 04:34:56.869300 1090 sql/event_log.go:132  [n1] Event: "node_join", target: 1, info: {Descriptor:{NodeID:1 Address:localhost:26257 Attrs: Locality: ServerVersion:20.1 BuildTag:v20.1.8 StartedAt:1604205296745004900 LocalityAddress:[] ClusterName: SQLAddress:localhost:26257} ClusterID:846acbbe-3ab2-44bd-a1b7-9aa882763b89 StartedAt:1604205296745004900 LastUp:1604205296745004900}
+I201101 04:34:56.869832 833 sqlmigrations/migrations.go:1131  [schema-change-job-migration] evaluating tables for creating jobs
+I201101 04:34:56.869850 833 sqlmigrations/migrations.go:719  [n1] schema change job migration completed
+I201101 04:34:58.638145 213 gossip/gossip.go:1527  [n1] node has connected to cluster via gossip
+I201101 04:34:58.638284 213 kv/kvserver/stores.go:266  [n1] wrote 0 node addresses to persistent storage
+W201101 04:35:06.773655 364 server/status/runtime.go:420  [n1] unable to get file descriptor usage (will not try again): not implemented on windows
+I201101 04:35:07.071562 364 server/status/runtime.go:498  [n1] runtime stats: 129 MiB RSS, 257 goroutines, 64 MiB/3.0 MiB/85 MiB GO alloc/idle/total, 16 MiB/20 MiB CGO alloc/total, 0.0 CGO/sec, 0.0/0.0 %(u/s)time, 0.0 %gc (8x), 29 KiB/13 KiB (r/w)net
+I201101 04:35:12.797785 1456 kv/kvserver/replica_consistency.go:246  [n1,consistencyChecker,s1,r4/1:/System{/tsd-tse}] triggering stats recomputation to resolve delta of {ContainsEstimates:2876 LastUpdateNanos:1604205306793989000 IntentAge:0 GCBytesAge:0 LiveBytes:-8286 LiveCount:-692 KeyBytes:-33660 KeyCount:-692 ValBytes:25374 ValCount:-692 IntentBytes:0 IntentCount:0 SysBytes:0 SysCount:0}
+I201101 04:35:16.774400 358 kv/kvserver/store.go:2474  [n1,s1] sstables (read amplification = 0):
+I201101 04:35:16.774580 358 kv/kvserver/store.go:2475  [n1,s1] 
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 20.1 total, 20.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+estimated_pending_compaction_bytes: 0 B
+I201101 04:35:17.081253 364 server/status/runtime.go:498  [n1] runtime stats: 137 MiB RSS, 248 goroutines, 74 MiB/1.8 MiB/94 MiB GO alloc/idle/total, 16 MiB/20 MiB CGO alloc/total, 553.7 CGO/sec, 0.8/0.3 %(u/s)time, 0.0 %gc (0x), 9.1 KiB/5.5 KiB (r/w)net
+W201101 04:35:24.651000 1737 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+W201101 04:35:25.698266 1738 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+I201101 04:35:27.084183 364 server/status/runtime.go:498  [n1] runtime stats: 142 MiB RSS, 249 goroutines, 55 MiB/26 MiB/100 MiB GO alloc/idle/total, 16 MiB/21 MiB CGO alloc/total, 415.9 CGO/sec, 0.9/1.6 %(u/s)time, 0.0 %gc (1x), 74 KiB/24 KiB (r/w)net
+W201101 04:35:30.719891 1773 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+I201101 04:35:37.089197 364 server/status/runtime.go:498  [n1] runtime stats: 144 MiB RSS, 250 goroutines, 62 MiB/20 MiB/100 MiB GO alloc/idle/total, 16 MiB/21 MiB CGO alloc/total, 282.7 CGO/sec, 0.2/0.3 %(u/s)time, 0.0 %gc (0x), 21 KiB/19 KiB (r/w)net
+I201101 04:35:47.087678 364 server/status/runtime.go:498  [n1] runtime stats: 146 MiB RSS, 250 goroutines, 68 MiB/14 MiB/100 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 208.4 CGO/sec, 0.2/0.3 %(u/s)time, 0.0 %gc (0x), 14 KiB/6.8 KiB (r/w)net
+W201101 04:35:52.206984 2040 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+W201101 04:35:53.233355 2084 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+W201101 04:35:54.645866 2023 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+W201101 04:35:56.523862 2024 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+I201101 04:35:56.771360 359 gossip/gossip.go:567  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+gossip connectivity
+  n1 [sentinel];
+I201101 04:35:57.091291 364 server/status/runtime.go:498  [n1] runtime stats: 149 MiB RSS, 252 goroutines, 77 MiB/6.7 MiB/100 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 354.8 CGO/sec, 0.6/0.0 %(u/s)time, 0.0 %gc (0x), 4.6 KiB/3.6 KiB (r/w)net
+W201101 04:36:01.560812 2213 vendor/google.golang.org/grpc/server.go:703  grpc: Server.Serve failed to create ServerTransport: connection error: desc = "transport: http2Server.HandleStreams received bogus greeting from client: \"GET / HTTP/1.1\\r\\nHost: lo\""
+I201101 04:36:07.092327 364 server/status/runtime.go:498  [n1] runtime stats: 154 MiB RSS, 249 goroutines, 86 MiB/2.5 MiB/106 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 257.2 CGO/sec, 0.3/0.3 %(u/s)time, 0.0 %gc (0x), 3.2 KiB/3.9 KiB (r/w)net
+I201101 04:36:17.079506 364 server/status/runtime.go:498  [n1] runtime stats: 159 MiB RSS, 249 goroutines, 94 MiB/2.4 MiB/114 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 210.6 CGO/sec, 0.3/0.5 %(u/s)time, 0.0 %gc (0x), 2.4 KiB/1.5 KiB (r/w)net
+I201101 04:36:27.082037 364 server/status/runtime.go:498  [n1] runtime stats: 161 MiB RSS, 250 goroutines, 57 MiB/36 MiB/116 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 223.6 CGO/sec, 0.3/0.2 %(u/s)time, 0.0 %gc (1x), 567 KiB/255 KiB (r/w)net
+I201101 04:36:37.089456 364 server/status/runtime.go:498  [n1] runtime stats: 162 MiB RSS, 250 goroutines, 66 MiB/29 MiB/116 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 215.6 CGO/sec, 0.3/0.2 %(u/s)time, 0.0 %gc (0x), 22 KiB/21 KiB (r/w)net
+I201101 04:36:47.091143 364 server/status/runtime.go:498  [n1] runtime stats: 162 MiB RSS, 250 goroutines, 73 MiB/22 MiB/116 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 196.8 CGO/sec, 0.3/0.3 %(u/s)time, 0.0 %gc (0x), 27 KiB/8.6 KiB (r/w)net
+I201101 04:36:56.776315 359 gossip/gossip.go:567  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I201101 04:36:57.088125 364 server/status/runtime.go:498  [n1] runtime stats: 163 MiB RSS, 249 goroutines, 82 MiB/15 MiB/116 MiB GO alloc/idle/total, 17 MiB/22 MiB CGO alloc/total, 253.1 CGO/sec, 0.0/0.3 %(u/s)time, 0.0 %gc (0x), 2.8 KiB/2.7 KiB (r/w)net
+I201101 04:37:02.342922 1 cli/start.go:919  received signal 'interrupt'
+I201101 04:37:02.344122 1 cli/start.go:1006  initiating graceful shutdown of server
+I201101 04:37:02.349256 2882 server/drain.go:173  [server drain process] drain remaining: 2
+I201101 04:37:02.350653 2882 server/drain.go:175  [server drain process] drain details: table leases: 1, liveness record: 1
+I201101 04:37:02.553290 2882 server/drain.go:173  [server drain process] drain remaining: 0
+I201101 04:37:02.554208 2882 util/stop/stopper.go:539  [server drain process] quiescing
+I201101 04:37:59.524832 2882 storage/rocksdb.go:746  closing rocksdb instance at "C:\\Users\\samue\\Documents\\GitHub\\halloweenWeb\\cockroach-data\\cockroach-temp893022927"
+I201101 04:37:59.531992 2882 storage/rocksdb.go:746  closing rocksdb instance at "C:\\Users\\samue\\Documents\\GitHub\\halloweenWeb\\cockroach-data"
+I201101 04:37:59.537246 1 cli/start.go:1048  server drained and shutdown completed
+E201101 04:37:59.538573 1 cli/error.go:373  ERROR: interrupted

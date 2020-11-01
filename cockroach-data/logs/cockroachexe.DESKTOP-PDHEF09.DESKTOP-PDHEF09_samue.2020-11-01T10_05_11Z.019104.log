@@ -1,0 +1,25 @@
+I201101 10:05:11.606975 1 util/log/sync_buffer.go:70  [config] file created at: 2020/11/01 10:05:11
+I201101 10:05:11.606975 1 util/log/sync_buffer.go:70  [config] running on machine: DESKTOP-PDHEF09
+I201101 10:05:11.606975 1 util/log/sync_buffer.go:70  [config] binary: CockroachDB CCL v20.1.8 (x86_64-w64-mingw32, built 2020/10/21 15:56:58, go1.13.9)
+I201101 10:05:11.606975 1 util/log/sync_buffer.go:70  [config] arguments: [C:\Program Files\cockroach-v20.1.8.windows-6.2-amd64\cockroach-v20.1.8.windows-6.2-amd64\cockroach.exe start --join=localhost:26257]
+I201101 10:05:11.606975 1 util/log/sync_buffer.go:70  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg utf8=✓
+I201101 10:05:11.606972 1 cli/start.go:1223  logging to directory C:\Users\samue\Documents\GitHub\halloweenWeb\cockroach-data\logs
+W201101 10:05:11.612827 1 cli/start.go:1144  Using the default setting for --cache (128 MiB).
+  A significantly larger value is usually needed for good performance.
+  If you have a dedicated server a reasonable setting is --cache=.25 (16 GiB).
+I201101 10:05:11.612835 1 cli/start.go:1286  CockroachDB CCL v20.1.8 (x86_64-w64-mingw32, built 2020/10/21 15:56:58, go1.13.9)
+I201101 10:05:11.621115 1 server/config.go:404  system total memory: 64 GiB
+I201101 10:05:11.621144 1 server/config.go:406  server configuration:
+max offset             500000000
+cache size             128 MiB
+SQL memory pool size   16 GiB
+scan interval          10m0s
+scan min idle time     10ms
+scan max idle time     1s
+event log enabled      true
+I201101 10:05:11.621156 1 cli/start.go:1129  process identity: uid S-1-5-21-2477386673-297547264-542362026-1001, gid S-1-5-21-2477386673-297547264-542362026-1001
+I201101 10:05:11.621273 1 cli/start.go:697  starting cockroach node
+E201101 10:05:11.630288 1 cli/error.go:373  ERROR: cannot load certificates.
+Check your certificate settings, set --certs-dir, or use --insecure for insecure clusters.
+
+failed to start server: problem with CA certificate: not found
