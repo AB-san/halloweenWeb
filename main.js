@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const async = require("async");
 const fs = require('fs');
 const pg = require('pg');
+const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 const corsOptions = {
   origin: "https://temphalloweenhost.herokuapp.com/",
