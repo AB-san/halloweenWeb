@@ -1,4 +1,5 @@
 //const Movie = require('../Models/Movie');
+/*
 var async = require('async');
 var fs = require('fs');
 var pg = require('pg');
@@ -93,4 +94,4 @@ exports.getAddMovie = (req, res, next) => {
             pageTitle: "Movies",
             path: '/movies'
         });  
-};
+};*/

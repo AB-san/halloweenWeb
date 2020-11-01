@@ -1,6 +1,6 @@
-const Movie = require('../Models/Movie');
-const Game = require('../Models/Game');
+//const Movie = require('../Models/Movie');
+//const Game = require('../Models/Game');
 
-exports.getMovies = (req, res, next) => {
-    
-}
+//exports.getMovies = (req, res, next) => {
+//    
+//}
