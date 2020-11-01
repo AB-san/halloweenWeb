@@ -1,23 +1,23 @@
 exports.getIndex = (req, res, next) => {
-    res.render('admin/index', {
+    res.render('/index', {
         pageTitle: "Movies",
         path: '/movies'
     });  
 };
 exports.getMovies = (req, res, next) => {
-    res.render('admin/movies', {
+    res.render('/movies', {
         pageTitle: "Movies",
         path: '/movies'
     });  
 };
 exports.getPage = (req, res, next) => {
-    res.render('admin/page', {
+    res.render('/page', {
         pageTitle: "Movies",
         path: '/movies'
     });  
 };
 exports.getTrickOrTreat = (req, res, next) => {
-    res.render('admin/trickortreat', {
+    res.render('/trickortreat', {
         pageTitle: "Movies",
         path: '/movies'
     });  
