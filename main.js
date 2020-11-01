@@ -34,7 +34,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/admin', adminRoutes);
 //app.use('/user', userRoutes);
 //app.use('/visitor', visitorRoutes);
-app.use('/rough', roughRoute);
+app.use('/rough', express.static(path.join(__dirname, 'rough')))
+
 //app.use('/', (req, res, next) => {
 //  res.render('index', {
 //      pageTitle: "Movies",
