@@ -35,6 +35,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/user', userRoutes);
 //app.use('/visitor', visitorRoutes);
 //app.use('/rough', express.static(path.join(__dirname, 'rough')))
+app.use(express.static('views'));
+app.use('/index', (req, res, next) => {
+  res.sendFile('/index.html');  
+});
+app.use('/movies', (req, res, next) => {
+  res.sendFile( '/movies.html');  
+});
+app.use('/page', (req, res, next) => {
+  res.sendFile('/page.html');  
+});
+app.use('/trickortreat', (req, res, next) => {
+  res.sendFile('/trickortreat.html');  
+});
+
+/* 
 app.use('/index', (req, res, next) => {
   res.sendFile(express.static(path.join__dirname + '/index.html'));  
 });
@@ -47,7 +62,7 @@ app.use('/page', (req, res, next) => {
 app.use('/trickortreat', (req, res, next) => {
   res.sendFile(express.static(path.join__dirname + '/trickortreat.html'));  
 });
-
+*/
 //app.use('/', (req, res, next) => {
 //  res.render('index', {
 //      pageTitle: "Movies",
