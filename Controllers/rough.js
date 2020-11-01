@@ -1,4 +1,4 @@
-exports.getIndex = (req, res, next) => {
+/*exports.getIndex = (req, res, next) => {
     res.render('/index', {
         pageTitle: "Movies",
         path: '/movies'
@@ -21,4 +21,4 @@ exports.getTrickOrTreat = (req, res, next) => {
         pageTitle: "Movies",
         path: '/movies'
     });  
-};
+};*/

@@ -34,8 +34,31 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/admin', adminRoutes);
 //app.use('/user', userRoutes);
 //app.use('/visitor', visitorRoutes);
-app.use('/rough', express.static(path.join(__dirname, 'rough')))
-
+//app.use('/rough', express.static(path.join(__dirname, 'rough')))
+app.use('/index', (req, res, next) => {
+  res.render('/index', {
+      pageTitle: "Movies",
+      path: '/movies'
+  });  
+});
+app.use('/movies', (req, res, next) => {
+  res.render('/movies', {
+      pageTitle: "Movies",
+      path: '/movies'
+  });  
+});
+app.use('/page', (req, res, next) => {
+  res.render('/page', {
+      pageTitle: "Movies",
+      path: '/movies'
+  });  
+});
+app.use('/trickortreat', (req, res, next) => {
+  res.render('/trickortreat', {
+      pageTitle: "Movies",
+      path: '/movies'
+  });  
+});
 //app.use('/', (req, res, next) => {
 //  res.render('index', {
 //      pageTitle: "Movies",
