@@ -19,7 +19,7 @@ app.use(cors(corsOptions));
 // Establish Routes
 //const adminRoutes = require('./routes/admin');
 //const userRoutes = require('./routes/user');
-const roughRoute = require('./routes/rough');
+//const roughRoute = require('./routes/rough');
 //const visitorRoutes = require('./Routes/visitor');
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
