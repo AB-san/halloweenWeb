@@ -36,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/visitor', visitorRoutes);
 app.use('/rough', roughRoute);
 app.use('/', (req, res, next) => {
-  res.render('admin/index', {
+  res.render('/index', {
       pageTitle: "Movies",
       path: '/movies'
   });
