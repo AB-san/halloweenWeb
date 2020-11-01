@@ -27,7 +27,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/admin', adminRoutes);
 //app.use('/user', userRoutes);
 //app.use('/visitor', visitorRoutes);
-app.use('/', roughRoute);
+app.use('/rough', roughRoute);
+app.use('/', (req, res, next) => {
+  res.render('admin/index', {
+      pageTitle: "Movies",
+      path: '/movies'
+  });
+});
 //****************************************************** */
 //app.use('/activities',(req, res, next) => {
  //   res.sendFile(path.join(__dirname,'views', 'HalloweenWeb.html'));
