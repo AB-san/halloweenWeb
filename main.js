@@ -15,7 +15,7 @@ const app = express(); // Makes things easy
 //const sequelize = require('./Util/database');
 // TODO: add models
 app.use(cors(corsOptions));
-const Movie = require('./models/Movie');
+//const Movie = require('./models/Movie');
 // Establish Routes
 const adminRoutes = require('./routes/admin');
 const userRoutes = require('./routes/user');
