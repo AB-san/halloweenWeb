@@ -5,9 +5,15 @@ const bodyParser = require('body-parser');
 const async = require("async");
 const fs = require('fs');
 const pg = require('pg');
+const PORT = process.env.PORT || 5000;
+const corsOptions = {
+  origin: "https://temphalloweenhost.herokuapp.com/",
+  optionsSuccessStatus: 200
+};
 const app = express(); // Makes things easy
 //const sequelize = require('./Util/database');
 // TODO: add models
+app.use(cors(corsOptions));
 const Movie = require('./Models/Movie');
 // Establish Routes
 const adminRoutes = require('./Routes/admin');
@@ -41,4 +47,4 @@ app.use('/', (req, res, next) => {
 //****************************************************** */
     
 
-app.listen(3000);
+app.listen(PORT);
