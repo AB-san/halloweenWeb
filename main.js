@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 //const userRoutes = require('./routes/user');
 const roughRoute = require('./routes/rough');
 //const visitorRoutes = require('./Routes/visitor');
-
+app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
